@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects
+# SPA fallback: tutte le route non trovate tornano all'index
+/*    /index.html   200
