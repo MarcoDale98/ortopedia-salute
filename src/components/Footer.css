@@ -186,6 +186,34 @@
   color: white;
 }
 
+/* Powered by ONET */
+.footer__powered {
+  text-align: center;
+  padding: var(--space-3) 0 var(--space-5);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer__powered-link {
+  font-size: var(--text-xs);
+  color: rgba(255,255,255,0.3);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: color var(--duration);
+}
+
+.footer__powered-link:hover {
+  color: rgba(255,255,255,0.7);
+}
+
+.footer__powered-link strong {
+  color: rgba(99,179,237,0.6);
+  transition: color var(--duration);
+}
+
+.footer__powered-link:hover strong {
+  color: #63b3ed;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .footer__grid {

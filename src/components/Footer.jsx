@@ -89,6 +89,18 @@ export default function Footer() {
             <a href="#top">Torna in cima ↑</a>
           </div>
         </div>
+
+        {/* Powered by ONET */}
+        <div className="footer__powered">
+          <a
+            href="https://onet-italia.it"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__powered-link"
+          >
+            Powered by <strong>ONET</strong>
+          </a>
+        </div>
       </div>
     </footer>
   );
