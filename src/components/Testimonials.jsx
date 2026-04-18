@@ -4,37 +4,33 @@ import './Testimonials.css';
 const TESTIMONIALS = [
   {
     id: 1,
-    name: 'Maria Ferrara',
+    name: 'Maria',
     role: 'Caregiver di suo padre, 82 anni',
     city: 'Sesto San Giovanni',
-    avatar: '/avatar1.png',
     stars: 5,
     text: "Quando mio padre è stato dimesso dall'Ospedale Bassini, ho chiamato Ortopedia Salute alle 9 di mattina e il letto ortopedico era già montato in casa sua alle 16. Un servizio incredibile, personale gentile e disponibile.",
   },
   {
     id: 2,
-    name: 'Giorgio Manzoni',
+    name: 'Giorgio',
     role: 'Paziente post-operatorio',
     city: 'Cinisello Balsamo',
-    avatar: '/avatar2.png',
     stars: 5,
     text: "Dopo l'intervento al ginocchio, il mio fisiatra mi ha consigliato Ortopedia Salute per il tutore e le stampelle. Mi hanno spiegato come funzionava la pratica INAIL e ho avuto tutto gratis. Professionalità al top.",
   },
   {
     id: 3,
-    name: 'Luisa Barbieri',
+    name: 'Luisa',
     role: 'Figlia di paziente anziana',
     city: 'Sesto San Giovanni',
-    avatar: '/avatar1.png',
     stars: 5,
     text: 'Mia madre non riusciva più a fare la doccia in sicurezza. Abbiamo chiamato e nel giro di un giorno avevamo la sedia da doccia e le maniglie montate. Finalmente serena. Grazie di cuore!',
   },
   {
     id: 4,
-    name: 'Roberto Cipriani',
+    name: 'Roberto',
     role: 'Ex paziente Ospedale Civile',
     city: 'Cinisello Balsamo',
-    avatar: '/avatar2.png',
     stars: 5,
     text: "Ho scoperto solo grazie a loro che avevo diritto alla carrozzina elettrica tramite l'ASL. Mi hanno seguito in tutta la pratica senza costi aggiuntivi. Sono i migliori della zona, senza dubbio.",
   },
@@ -70,14 +66,6 @@ export default function Testimonials() {
               <Stars count={t.stars} />
               <blockquote className="testimonial-card__text">"{t.text}"</blockquote>
               <footer className="testimonial-card__author">
-                <img
-                  src={t.avatar}
-                  alt={`Avatar di ${t.name}`}
-                  className="testimonial-card__avatar"
-                  loading="lazy"
-                  width={48}
-                  height={48}
-                />
                 <div>
                   <p className="testimonial-card__name">{t.name}</p>
                   <p className="testimonial-card__role">{t.role} · {t.city}</p>
