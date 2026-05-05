@@ -11,8 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer__brand">
             <div className="footer__logo">
-              <span>🩼</span>
-              <span>Ortopedia<strong>Salute</strong></span>
+              <img src="/logo.png" alt="Ortopedia Salute S.r.l." className="footer__logo-img" />
             </div>
             <p className="footer__tagline">
               Ausili ortopedici a domicilio e in ospedale. 

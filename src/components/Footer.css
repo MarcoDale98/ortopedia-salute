@@ -27,6 +27,12 @@
   color: var(--amber);
 }
 
+.footer__logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
 .footer__tagline {
   font-size: var(--text-sm);
   line-height: 1.6;

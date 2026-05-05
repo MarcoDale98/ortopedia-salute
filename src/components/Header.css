@@ -46,6 +46,24 @@
   color: var(--amber);
 }
 
+/* Logo immagine reale */
+.header__logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  transition: opacity 0.2s var(--ease);
+}
+
+.header__logo:hover .header__logo-img {
+  opacity: 0.85;
+}
+
+.mobile-menu__logo-img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* Nav */
 .header__nav {
   display: flex;
