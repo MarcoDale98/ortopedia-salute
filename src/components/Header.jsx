@@ -32,7 +32,7 @@ export default function Header() {
         <div className="container header__inner">
           {/* Logo */}
           <a href="#top" className="header__logo" aria-label="Ortopedia Salute – torna in cima">
-            <img src="/logo.png" alt="Ortopedia Salute S.r.l." className="header__logo-img" />
+            <img src="/logo_symbol.png" alt="Ortopedia Salute S.r.l." className="header__logo-img" />
           </a>
 
           {/* Desktop nav */}

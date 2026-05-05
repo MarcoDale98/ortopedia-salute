@@ -48,14 +48,22 @@
 
 /* Logo immagine reale */
 .header__logo-img {
-  height: 50px;
+  height: 54px;
   width: auto;
   object-fit: contain;
-  transition: opacity 0.2s var(--ease);
+  filter:
+    drop-shadow(0 0 6px rgba(255,255,255,0.55))
+    drop-shadow(0 0 12px rgba(255,255,255,0.30))
+    drop-shadow(0 0 20px rgba(255,255,255,0.15));
+  transition: opacity 0.2s var(--ease), filter 0.2s var(--ease);
 }
 
 .header__logo:hover .header__logo-img {
-  opacity: 0.85;
+  opacity: 0.90;
+  filter:
+    drop-shadow(0 0 8px rgba(255,255,255,0.70))
+    drop-shadow(0 0 16px rgba(255,255,255,0.40))
+    drop-shadow(0 0 28px rgba(255,255,255,0.20));
 }
 
 .mobile-menu__logo-img {
