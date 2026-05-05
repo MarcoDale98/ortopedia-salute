@@ -66,10 +66,72 @@
     drop-shadow(0 0 28px rgba(255,255,255,0.20));
 }
 
+
+
+/* Testo logo affiancato al simbolo */
+.header__logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  gap: 1px;
+  white-space: nowrap;
+}
+
+.header__logo-top {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.90);
+}
+
+.header__logo-bottom {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #63c5f0;   /* celeste che richiama il logo */
+}
+
+.header__logo-bottom em {
+  font-style: normal;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.55);
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+/* Mobile menu brand */
+.mobile-menu__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
 .mobile-menu__logo-img {
-  height: 56px;
+  height: 48px;
   width: auto;
   object-fit: contain;
+}
+
+.mobile-menu__brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.mobile-menu__brand-text span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+.mobile-menu__brand-text strong {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #1a6fb5;
 }
 
 /* Nav */

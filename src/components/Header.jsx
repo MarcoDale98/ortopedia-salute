@@ -32,7 +32,11 @@ export default function Header() {
         <div className="container header__inner">
           {/* Logo */}
           <a href="#top" className="header__logo" aria-label="Ortopedia Salute – torna in cima">
-            <img src="/logo_symbol.png" alt="Ortopedia Salute S.r.l." className="header__logo-img" />
+            <img src="/logo_symbol.png" alt="" className="header__logo-img" aria-hidden="true" />
+            <span className="header__logo-text">
+              <span className="header__logo-top">Ortopedia</span>
+              <span className="header__logo-bottom">Salute <em>S.r.l.</em></span>
+            </span>
           </a>
 
           {/* Desktop nav */}
@@ -68,7 +72,13 @@ export default function Header() {
       {/* Mobile menu overlay */}
       <div className={`mobile-menu${menuOpen ? ' mobile-menu--open' : ''}`} aria-hidden={!menuOpen}>
         <div className="mobile-menu__top">
-          <img src="/logo.png" alt="Ortopedia Salute S.r.l." className="mobile-menu__logo-img" />
+          <div className="mobile-menu__brand">
+            <img src="/logo_symbol.png" alt="" className="mobile-menu__logo-img" aria-hidden="true" />
+            <span className="mobile-menu__brand-text">
+              <span>Ortopedia</span>
+              <strong>Salute</strong>
+            </span>
+          </div>
           <button onClick={closeMenu} aria-label="Chiudi menu"><X size={26} /></button>
         </div>
         <nav className="mobile-menu__nav">
